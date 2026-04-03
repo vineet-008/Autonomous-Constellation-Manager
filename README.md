@@ -50,12 +50,21 @@ python setup.py develop
 
 ## Running the MVP Demo
 
-Once the environment is successfully configured, you can launch the live MVP Demonstration.
+Once the environment is successfully configured, you have two different ways to launch the architecture, depending on your presentation goal:
 
-Run the test flight command to initiate the backend pipeline:
+### 1. Functional System & Telemetry Simulation (Metrics focus)
+To run the full backend pipeline and verify the automated reinforcement-learning collision evasion arrays are executing:
 ```bash
 python -m examples.test_flight
 ```
+**What to expect:** The terminal will dynamically ping the CelesTrak API for LIVE satellite orbital tracking! A 3D solid-shaded globe window will appear on-screen alongside real-time Matplotlib metric dashboards, reacting actively as autonomous Delta-V deflections optimize Constellation paths.
 
-**What to expect:**
-The terminal will ping the API and securely fetch live constellation payloads. The simulator will silently execute parallel environments in the background to calculate initial metrics, before surfacing the live **3D Visualizer**. You will see the entire fleet rotating alongside dynamic telemetry graphs that bounce actively as the agent autonomously executes collision avoidance maneuvers in real-time!
+### 2. Cinematic Fully-Textured Fleet Revolver (Graphics focus)
+To load a gorgeous, fully graphic rotating texture-map of the Earth wrapped with dozens of independently tracked orbital trajectories smoothly rotating automatically:
+```bash
+python -m examples.visual_demo
+```
+|![](earth1.png)|
+|:--:| 
+|Real-time Simulation of Autonomous Evasive Maneuvers|
+**What to expect:** A stunning cinematic loop! The engine natively downloads a high-fidelity planetary map, wraps it seamlessly across a 3D spherical point-mesh matrix, and continuously revolves the camera showing colored orbital payload indicators rotating in active 3D space with zero metric-graph clutter.
