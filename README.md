@@ -66,5 +66,4 @@ python -m examples.visual_demo
 ```
 |![](earth1.png)|
 |:--:| 
-|Real-time Simulation of Autonomous Evasive Maneuvers|
 **What to expect:** A stunning cinematic loop! The engine natively downloads a high-fidelity planetary map, wraps it seamlessly across a 3D spherical point-mesh matrix, and continuously revolves the camera showing colored orbital payload indicators rotating in active 3D space with zero metric-graph clutter.
