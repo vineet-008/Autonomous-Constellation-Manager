@@ -34,7 +34,7 @@ Ensure you are running **Python 3.6+** in your environment. You will need the fo
 
 **Step 1:** Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/Autonomous-Constellation-Manager.git
+git clone https://github.com/vineet-008/Autonomous-Constellation-Manager.git
 cd Autonomous-Constellation-Manager
 ```
 
